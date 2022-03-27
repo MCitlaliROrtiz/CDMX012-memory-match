@@ -1,21 +1,17 @@
-//
-// Para incluir los diferentes sets de cartas podemos _importar_ el archivo
-// JavasSript que contenga el `export` correspondiente...
-//
-// import pokemon from '../data/pokemon/pokemon.js';
-// console.log(pokemon);
-//
-// O alternativamente podríamos cargar el JSON de forma asíncrona usando
-// `fetch` en el momento que consideremos necesario.
-//
-// fetch('./data/pokemon/pokemon.json')
-//   .then(resp => resp.json())
-//   .then(console.log)
-//   .catch(console.error);
-//
 
+import data from '../data/webdev/webdev.js';
+import { shuffle } from '../logic.js';
+
+const webData=data.items;
+
+const duplicateData=webData.concat(webData);
+
+
+  let random=shuffle(duplicateData);
+  
+ 
 const App = () => {
-  const el = document.createElement('div');
+  const el = document.createElement('section');
 
   el.className = 'App';
   el.textContent = 'Hola mundo!';
