@@ -2,19 +2,17 @@
 import data from '../data/webdev/webdev.js';
 import { shuffle } from '../logic.js';
 
-const webData=data.items;
-
+const webData=data.items
 const duplicateData=webData.concat(webData);
 
-
-  let random=shuffle(duplicateData);
+let random=shuffle(duplicateData);
   
  
 const App = () => {
   const el = document.createElement('section');
 
   el.className = 'App';
-  el.textContent = 'Hola mundo!';
+  el.textContent = '';
 
   return el;
 };

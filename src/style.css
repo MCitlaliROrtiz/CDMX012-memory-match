@@ -1,0 +1,22 @@
+ body{
+    height:100vh;
+    width:100vw;
+    background-image:url(/src/img/memoryGym.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: center;
+
+ }
+ .App{
+     height:80vh;
+     width:80vw;
+     background-color:#042E6C;
+     opacity:87%;
+     font-family: 'Times New Roman', Times, serif;
+     font: size 40px;
+     color:#ffff;
+     display: flex;
+     
+
+}
