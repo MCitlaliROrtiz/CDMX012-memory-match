@@ -39,7 +39,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: flex-end;
-   transform:rotateY(180 deg);
+   
   }
   .cardStyle img{
      height:70%;
@@ -49,16 +49,12 @@
    width:100%;
    height:100%;
    background-image:url(../img/question.jpg);
+   opacity:50%;
    position: absolute;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   transform:rotateY(180 deg);
+   
     
   }
- /*.cardReverse image{
-     max-width:100px;
-     max-height:100px;
-   
-  }*/
