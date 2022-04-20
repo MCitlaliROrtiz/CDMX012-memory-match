@@ -427,9 +427,18 @@ en base al conocimiento que puedas obtener de tu usuario. Estas preguntas te
 pueden ayudar:
 
 * ¿Quiénes son los principales usuarios de producto?
+ personas que buscan ejercitar su memoria de forma divertida,facil y desde cualquier lugar
 * ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+ tiene una aplicacion terapeutica al permitir ejercisios de memoria rapidos y que se pueden reproducir indefinidamente
 * ¿Cuáles son los componentes principales de la interfaz y por qué?
+1 Lo pricipal son las tarjetas
+2 un instructivo
+
 * ¿Cuándo utilizan o utilizarían el producto?
+la pagina debe poder desplegarse en una amplia gama de dispositivos,
+permitir que el usuario seleccione  y voltee las tarjetas (dos por turno) y 
+que las tarjetas en caso de que sean iguales se queden visibles durante toda la partida 
+
 * Toda tu investigación previa debe tener como resultado todas las Historias
   de Usuario de tu proyecto.
 * No hagas los prototipos de alta fidelidad de todas tus Historias. Comienza
