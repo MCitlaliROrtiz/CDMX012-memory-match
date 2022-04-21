@@ -13,7 +13,7 @@ let firstCard=null;
 let secondCard=null;
 let random=shuffle(duplicateData);
 let styleFirstCard=null;
-console.log();
+
 
   
  //crear un nodo por cada item
@@ -41,15 +41,6 @@ function createNode(item) {
     //evento a para girar tarjetas
     
    cardContainer.addEventListener("click",function() {
-     /* necesito que  solo se puedan dar 2 clicks por turno
-     que se guarde el item.id en una variable por cada click
-     luego comparar si son iguales(match)
-     si son iguales mantener visibility de reverse card en  hidden
-     si no lo son aplicar visible
-     e independiente a esto restablecer counter en 0 para el siguiente turno
-     crear  una variable score que aumente uno cada vez que el match ocurra y 
-     cuando score sea igual a 10   mostrar un aviso al jugador de que ha ganado
-     tener en cuenta limpiar las variables de second y first card(igual que counter) */
     //empezar a contar clicks
     counter++;
     //primer click
@@ -57,18 +48,18 @@ function createNode(item) {
      reverse.style.visibility="hidden";
      firstCard=item.id;
      styleFirstCard=reverse;
-     console.log(styleFirstCard);
+     
     
      } //segundo click
      else if (counter===2) {
        reverse.style.visibility="hidden";
       secondCard=item.id;
-      console.log(firstCard);
+      
    
         //match de id
       if(firstCard===secondCard){
          score++
-         console.log("score",score);
+         
         }
       //id no hacen match
       if(firstCard!==secondCard){
@@ -79,9 +70,9 @@ function createNode(item) {
         }
         counter=0;
         if(score===10){
-          console.log("si se ejecuta");
+          
           let oldNodo=el.removeChild(cardContainer);
-          console.log(oldNodo);
+         
           let congratulatios=document.createElement("section");
           congratulatios.className="winner";
           let mensage=document.createElement("p");
@@ -91,15 +82,15 @@ function createNode(item) {
         }
       }
     
+    });
      
+    el.appendChild(cardContainer)
+  }
        
    
       
    
-   });
 
-   el.appendChild(cardContainer)
-}
 
  random.forEach(createNode);
  
