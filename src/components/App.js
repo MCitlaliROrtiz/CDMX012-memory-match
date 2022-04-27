@@ -17,7 +17,7 @@ let styleFirstCard=null;
 
   
  //crear un nodo por cada item
-function createNode(item) {
+ function createNode(item) {
   let cardContainer=document.createElement("section");
   cardContainer.className="cardContainer";
   
@@ -48,13 +48,13 @@ function createNode(item) {
      reverse.style.visibility="hidden";
      firstCard=item.id;
      styleFirstCard=reverse;
-     
+     console.log(firstCard);
     
      } //segundo click
      else if (counter===2) {
        reverse.style.visibility="hidden";
       secondCard=item.id;
-      
+      console.log(secondCard);
    
         //match de id
       if(firstCard===secondCard){
@@ -65,13 +65,13 @@ function createNode(item) {
       if(firstCard!==secondCard){
         reverse.style.visibility="hidden";
         styleFirstCard.style="visibility:hidden";
-        setTimeout(()=>{reverse.style.visibility="visible"},2000);
-        setTimeout(()=>{styleFirstCard.style.visibility="visible"},2000);
+        setTimeout(()=>{reverse.style.visibility="visible"},1000);
+        setTimeout(()=>{styleFirstCard.style.visibility="visible"},1000);
         }
         counter=0;
         if(score===10){
           
-          let oldNodo=el.removeChild(cardContainer);
+          el.removeChild(cardContainer);
          
           let congratulatios=document.createElement("section");
           congratulatios.className="winner";

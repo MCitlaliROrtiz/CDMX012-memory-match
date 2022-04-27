@@ -3,7 +3,9 @@
     width:100vw;
     margin:0;
     padding:0;
-    background-image:url('/img/memoryGym.jpg');
+    background-image:url(./img/memoryGym.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
@@ -13,6 +15,7 @@
  .App{
      height:90vh;
      width:90vw;
+     padding:1%;
      background-color:#11366F;
      font-family: 'Times New Roman', Times, serif;
      font: size 40px;
@@ -48,7 +51,8 @@
   .cardReverse{
    width:100%;
    height:100%;
-   background-image:url('/img/question.jpg');
+   background-image:url(./img/question.jpg);
+   background-color:#7ca1d8;
    position: absolute;
    display: flex;
    flex-direction: column;
