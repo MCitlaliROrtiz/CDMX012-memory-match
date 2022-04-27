@@ -3,7 +3,7 @@
     width:100vw;
     margin:0;
     padding:0;
-    background-image:url('./img/memoryGym.jpg');
+    background-image:url(./img/memoryGym.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     display: flex;
@@ -52,7 +52,7 @@
    width:100%;
    height:100%;
    background-color:#7ca1d8;
-   background-image:url('img/question.jpg');
+   background-image:url(./img/question.jpg);
    position: absolute;
    display: flex;
    flex-direction: column;
