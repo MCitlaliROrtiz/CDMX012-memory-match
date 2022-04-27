@@ -48,13 +48,13 @@ let styleFirstCard=null;
      reverse.style.visibility="hidden";
      firstCard=item.id;
      styleFirstCard=reverse;
-     console.log(firstCard);
+    
     
      } //segundo click
      else if (counter===2) {
        reverse.style.visibility="hidden";
       secondCard=item.id;
-      console.log(secondCard);
+      
    
         //match de id
       if(firstCard===secondCard){

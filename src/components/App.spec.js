@@ -6,8 +6,4 @@ describe('App', () => {
     expect(el instanceof HTMLElement).toBe(true);
   });
 
-  it(' createNode is a function', () => {
-    expect(typeof createNode).toBe('function');
-  });
-  
 });
